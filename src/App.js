@@ -1,25 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css"; // Optional: Add styles
+import MenuApp from "./components/MenuApp"; // Import MenuApp component
 
-function App() {
+const menuData = [
+  {
+    menuName: "Dinner",
+    menuItems: [
+      {
+        itemId: 1,
+        itemPrice: "12",
+        itemName: "Lasagne",
+        itemDescription: "Layers of pasta with cheese and meat.",
+      },
+      {
+        itemId: 2,
+        itemPrice: "10",
+        itemName: "Cheese Ravioli",
+        itemDescription: "Ravioli filled with ricotta cheese.",
+      },
+      {
+        itemId: 3,
+        itemPrice: "14",
+        itemName: "Chicken Parmesan",
+        itemDescription: "Breaded chicken with marinara sauce.",
+      },
+    ],
+  },
+  {
+    menuName: "Dessert",
+    menuItems: [
+      {
+        itemId: 4,
+        itemPrice: "10",
+        itemName: "Chocolate Lava Cake",
+        itemDescription: "Molten chocolate cake.",
+      },
+      {
+        itemId: 5,
+        itemPrice: "8",
+        itemName: "Tiramisu",
+        itemDescription: "Coffee-flavored dessert.",
+      },
+      {
+        itemId: 6,
+        itemPrice: "5",
+        itemName: "Cannolis",
+        itemDescription: "Pastry filled with ricotta cheese.",
+      },
+    ],
+  },
+];
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuApp data={menuData} />
     </div>
   );
-}
+};
 
 export default App;
