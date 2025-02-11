@@ -1,16 +1,16 @@
 import React from "react";
-import "./App.css"; // Optional: Add styles
-import MenuApp from "./components/MenuApp"; // Import MenuApp component
+import MenuApp from "./components/MenuApp"; // import MenuApp component
 
 const menuData = [
   {
-    menuName: "Dinner",
+    menuName: "Dinner", //category name
     menuItems: [
+      // list of items in dinner category
       {
         itemId: 1,
-        itemPrice: "12",
-        itemName: "Lasagne",
-        itemDescription: "Layers of pasta with cheese and meat.",
+        itemPrice: "12", // price
+        itemName: "Lasagne", // name
+        itemDescription: "Layers of pasta with cheese and meat.", //description
       },
       {
         itemId: 2,
@@ -51,6 +51,7 @@ const menuData = [
   },
 ];
 
+// component that renders the app
 const App = () => {
   return (
     <div className="App">

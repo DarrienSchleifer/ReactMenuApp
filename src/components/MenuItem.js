@@ -1,5 +1,6 @@
 import React from "react";
 
+// component to display single menu item
 const MenuItem = ({ item }) => {
   return (
     <div className="menu-item">

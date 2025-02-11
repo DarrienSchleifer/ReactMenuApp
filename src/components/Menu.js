@@ -1,6 +1,7 @@
 import React from "react";
-import MenuItem from "./MenuItem"; // Import the MenuItem component
+import MenuItem from "./MenuItem"; // import MenuItem component
 
+// component that receives manu object
 const Menu = ({ menu }) => {
   return (
     <div className="menu">

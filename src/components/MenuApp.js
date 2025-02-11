@@ -1,6 +1,7 @@
 import React from "react";
-import Menu from "./Menu"; // Import the Menu component
+import Menu from "./Menu"; // import  menu component
 
+// component that receives menu data
 const MenuApp = ({ data }) => {
   return (
     <div className="menu-app">
